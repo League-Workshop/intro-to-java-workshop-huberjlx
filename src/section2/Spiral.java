@@ -1,15 +1,32 @@
 package section2;
 
+import java.awt.Color;
+
 import org.jointheleague.graphical.robot.Robot;
 
 public class Spiral {
 
 	public static void main(String[] args) {
-		// 1. Create a new Robot
+		Robot rockyBalboa=new Robot();
 		
-		// 5. Set your robot's pen down 
+		for (int i = 0; i < 75; i++) {
 		
-		// 3. Set the robot to go at max speed (100)
+		rockyBalboa.penDown();
+		
+		rockyBalboa.setSpeed(100);
+		
+		rockyBalboa.turn(360/7);
+		
+		rockyBalboa.setPenWidth(1);
+		
+		rockyBalboa.move(5*i);
+		
+		rockyBalboa.setRandomPenColor();
+		
+
+			
+		}
+		
 		
 		// 4. Use a for loop to repeat steps #7 to #8, 75 times
 		

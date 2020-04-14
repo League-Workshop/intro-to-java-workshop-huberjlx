@@ -9,6 +9,37 @@ import org.jointheleague.graphical.robot.Robot;
 public class PentagonCrazy {
 
 	private void makePrettyThings() {
+	
+	Robot rockyBalboa=new Robot();
+	
+	rockyBalboa.penDown();
+	
+	rockyBalboa.setSpeed(100);
+	
+	rockyBalboa.setPenColor(Color.blue);
+	
+	for (int i = 0; i < 200; i++) {
+	
+	int sides=70;
+	
+	int angles=360/sides; 
+	
+	rockyBalboa.turn(angles);
+		
+	rockyBalboa.move(200);
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		// 1. Create a new Robot
 
 		// 3. Put the robot's pen down
