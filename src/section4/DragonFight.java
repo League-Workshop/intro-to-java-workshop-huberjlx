@@ -11,6 +11,14 @@ public class DragonFight {
 		ImageIcon dragon = new ImageIcon("src/section4/dragonPicture.jpg");		
 		
 		JOptionPane.showMessageDialog(null, "Defeat the dragon to take its treasure!", "Dragon Fighter", 0, dragon);
+	
+		int playerHealth=100;
+		int dragonHealth=100;
+		int playerDamage=0;
+		int dragonDamage=0;
+		
+	
+		
 		// 2. Create a variable called "playerHealth" to store your health (set it equal to 100)
 	
 		// 3. Create a variable called "dragonHealth" to store the dragon's health (set it equal to 100)
@@ -21,7 +29,56 @@ public class DragonFight {
 		
 		
 		// 6.  Delete the slashes at the beginning of the next line.  
-		//while(playerHealth>0 && dragonHealth>0) {    //this line of code keeps the battle going until someone's health reaches 0 
+		while(playerHealth>0 && dragonHealth>0) { 
+			
+			String damage=JOptionPane.showInputDialog(null, "Do you want to attack with a yell or a kick");
+			
+			if (damage.equalsIgnoreCase("Yell")) {
+				
+				Random r=new Random();
+				dragonDamage=r.nextInt(11);
+			
+				dragonHealth=dragonHealth-dragonDamage;
+			}	
+			if (damage.equalsIgnoreCase("Kick")) {
+					
+				Random x=new Random();
+				dragonDamage=x.nextInt(26);
+				
+				dragonHealth=dragonHealth-dragonDamage;
+					
+			}
+			
+			
+		Random y=new Random();
+		playerDamage=y.nextInt(36);
+		
+		playerHealth=playerHealth-playerDamage;
+		
+		if (playerHealth<=0) {
+			
+			JOptionPane.showMessageDialog(null, "You lost");
+		}
+		else if(dragonHealth<=0) {
+				
+			JOptionPane.showMessageDialog(null, "Good job, you won!");
+		}
+			
+		else {
+			
+			JOptionPane.showMessageDialog(null,"Dragon Health"+ dragonHealth);
+			JOptionPane.showMessageDialog(null,"Player Health"+ playerHealth);
+		}
+		
+		
+		
+		
+		
+		
+		
+		}
+			
+		//this line of code keeps the battle going until someone's health reaches 0 
 		
 		// 7. Add a closing mustache at the very bottom of this program (since we just added an opening mustache on the previous step).
 		

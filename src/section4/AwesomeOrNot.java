@@ -17,22 +17,22 @@ public class AwesomeOrNot {
 		
 		if (randomNumber==0) {
 			
-			JOptionPane.showMessageDialog(null, "That is awesome!");
+			JOptionPane.showMessageDialog(null, awesomeAnswer+" is awesome!");
 		}
 		
 		if (randomNumber==1) {
 			
-			JOptionPane.showMessageDialog(null, "What you answered is ok.");
+			JOptionPane.showMessageDialog(null, awesomeAnswer+" is ok.");
 		}
 		
 		if (randomNumber==2) {
 			
-			JOptionPane.showMessageDialog(null, "What you answered is boring.");
+			JOptionPane.showMessageDialog(null, awesomeAnswer+" is boring.");
 		}
 		
 		if (randomNumber==3) {
 			
-			JOptionPane.showMessageDialog(null, "What you answered is a piece of ****");
+			JOptionPane.showMessageDialog(null, awesomeAnswer+" is a piece of ****");
 		}
 		
 }
@@ -53,6 +53,7 @@ public class AwesomeOrNot {
 	// 6. If the random number is 1
 
 	// -- tell the user whatever they entered is ok.
+
 
 	// 7. If the random number is 2
 
